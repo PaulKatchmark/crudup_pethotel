@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CRUD Up Pet hotel</title>
+    <script src="/vendor/jquery.min.js"></script>
+    <script src="/scripts/client.js"></script>
+      <link rel="stylesheet" href="styles/stylesheet.css">
+  </head>
+  <body>
+    <h1>Owners and Pets</h1>
+    <h2>Owner Registration</h2>
+    <form id="owners">
+
+      <label for="first_name">First Name:</label>
+          <input type="text" id="firstName" name="first_name" class="name" />
+      <label for="last_name">Last Name:</label>
+          <input type="text" id="lastName" name="last_name" class="name" />
+        <button id="register" >Register</button>
+    </form>
+    <form id="pets">
+        <h2>Pets</h2>
+        <span>Owner Name</span><select id="ownerDropDown" name="owner_id">Owner Name:</select>
+
+        <label for="name">Pet Name:</label>
+            <input type="text" id="petName" name="name" class="name" />
+
+
+        <label for="color">Color:</label>
+            <input type="text" id="color" name="color" class="name" />
+
+        <label for="breed">Breed:</label>
+            <input type="text" id="breed" name="breed" class="name" />
+            <button id="addpet">Add Pet</button>
+    </form>
+    <table id="petsTable">
+      <tr>
+        <th>Owner</th>
+        <th>Pet</th>
+        <th>Breed</th>
+        <th>Color</th>
+        <th>Update</th>
+        <th>Delete</th>
+        <th>Check-In/Out</th>
+      </tr>
+    </table>
+
+  </body>
+</html>
